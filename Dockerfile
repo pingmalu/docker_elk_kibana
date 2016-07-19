@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 MAINTAINER MaLu <malu@malu.me> 
 
 RUN apt-get update && apt-get -y upgrade
-RUN apt-get -y install wget nginx-full apache2-utils supervisor
+RUN apt-get -y install wget vim nginx-full apache2-utils supervisor
 
 WORKDIR /opt
 RUN wget --no-check-certificate -O- https://download.elastic.co/kibana/kibana/kibana-4.1.1-linux-x64.tar.gz | tar xvfz - 
