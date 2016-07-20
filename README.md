@@ -1,6 +1,14 @@
 docker-kibana
 =============
 
+环境变量：
+
+	ES         elasticsearch地址
+	ES_USER    用户名
+	ES_PASS    密码  
+
+
+
 Kibana webapp.  This container is designed to run behind an elb with SSL offloading.  Port 80 redirects urls
 to https if the X-Forwarded-Proto header is "https".
 
