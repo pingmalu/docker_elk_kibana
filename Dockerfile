@@ -25,6 +25,6 @@ EXPOSE 80
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-ADD run ./run.sh
+ADD run.sh ./run.sh
 RUN chmod +x ./run.sh
 CMD ./run.sh
